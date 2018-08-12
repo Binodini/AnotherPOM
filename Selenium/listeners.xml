@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+<listeners>
+		<listener class-name="copiedfromgithub.TestNGListeners"></listener>
+	</listeners>
+	<parameter name="url" value="http://13.127.176.34/opentaps"></parameter>
+	<parameter name="uName" value="DemoCSR"></parameter>
+	<parameter name="pwd" value="crmsfa"></parameter>
+  <test name="Test">
+    <classes>
+      <class name="copiedfromgithub.EditLead"/>
+      <class name="copiedfromgithub.CreateLead"/>
+      <class name="copiedfromgithub.DeleteLead"/>
+      <class name="copiedfromgithub.DuplicateLead"/>
+      <class name="copiedfromgithub.MergeLead"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
